@@ -1,7 +1,10 @@
+# Compiling
+
+All `.tex` files should be compiled with `xelatex`
 
 # License
 
-(c) by Jon Eyolfson
+(c) Jon Eyolfson
 
 This work is licensed under a Creative Commons Attribution-ShareAlike 3.0
 Unported License.
