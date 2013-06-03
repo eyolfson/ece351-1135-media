@@ -266,13 +266,13 @@ The rules in this case is the DMAS part of BEDMAS
 public int eval(BinaryExpr e) {
   switch (e.op) {
     case '*':
-      return e.left.eval() * e.right.eval();
+      return eval(e.left) * eval(e.right);
     case '/':
-      return e.left.eval() / e.right.eval();
+      return eval(e.left) / eval(e.right);
     case '+':
-      return e.left.eval() + e.right.eval();
+      return eval(e.left) + eval(e.right);
     case '-':
-      return e.left.eval() - e.right.eval();
+      return eval(e.left) - eval(e.right);
   }
 }
 public int eval(IntegerExpr i) {
