@@ -478,6 +478,7 @@ This is the only derivation
 \begin{frame}
 \frametitle{Previous Parse Tree}
 
+\scalebox{0.8}{\begin{minipage}{1.25\textwidth}
 \begin{tikztree}
   \node {$e$}
     child { node {$e$} 
@@ -494,7 +495,8 @@ This is the only derivation
       child { node{\lstinline{INT}} }
     };
 \end{tikztree}
-
+\end{minipage}}
+~\\~\\
 What about the corresponding AST?
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -738,6 +740,7 @@ associativity (so it should call itself)
 \begin{frame}
 \frametitle{Our Completed Grammar}
 
+\small
 \begin{align*}
 T &= \{ +, -, *, /, (, ), \text{\lstinline{INT}} \}\\
 N &= \{ e, t, f, p \}\\
